@@ -33,4 +33,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: Is this working?
+          value: Hello my Arc K8s GitOps flow!
