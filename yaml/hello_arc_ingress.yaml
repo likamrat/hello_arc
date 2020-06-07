@@ -12,5 +12,5 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: podinfo
+          serviceName: hello-arc
           servicePort: 8080
