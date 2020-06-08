@@ -20,3 +20,8 @@ Please refer to the repository for detailed instructions on how to build your on
 
 The container for this "Hello Arc" application can be found on [Docker Hub](https://hub.docker.com/r/liorkamrat/hello-arc). 
 
+## Contributing
+
+Before contributing code, please see the [CONTRIBUTING](CONTRIBUTING.md) guide.
+
+Issues, PRs and Feature Request have their own templates. Please fill out the whole template.
