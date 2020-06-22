@@ -4,7 +4,7 @@ metadata:
   name: hello-arc
   namespace: hello-arc 
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: 8080
@@ -33,4 +33,4 @@ spec:
         - containerPort: 8080
         env:
         - name: MESSAGE
-          value: This is an Azure Arc GitOps Demo 1!
+          value: This is an Azure Arc GitOps Demo Test!
