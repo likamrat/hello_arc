@@ -2,16 +2,15 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: hello-arc
-  namespace: prod
+  namespace: hello-arc
 spec:
   releaseName: hello-arc
   chart:
-    git: https://github.com/likamrat/hello_arc.git
+    git: git@github.com:likamrat/hello_arc
     path: charts/hello-arc
     ref: master
   values:
     image:
       repository: liorkamrat/hello-arc
       tag: latest
-    service:
-      type: ClusterIP
+    replicaCount: 3
