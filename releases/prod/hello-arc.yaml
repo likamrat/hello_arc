@@ -14,4 +14,3 @@ spec:
       repository: liorkamrat/hello-arc
       tag: latest
     replicas: 5
-    
