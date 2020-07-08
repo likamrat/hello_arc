@@ -14,3 +14,6 @@ spec:
       repository: liorkamrat/hello-arc
       tag: latest
     replicaCount: 3
+    env:
+      name: MESSAGE
+      value: Helm chart GitOps testing!
