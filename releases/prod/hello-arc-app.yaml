@@ -12,8 +12,8 @@ apiVersion: helm.fluxcd.io/v1
      ref: master
    values:
      image:
-       repository: liorkamrat/hello-arc:latest
-       tag: v1
+       repository: liorkamrat/hello-arc
+       tag: latest
      replicaCount: 3
      env:
       name: MESSAGE
@@ -33,4 +33,4 @@ apiVersion: helm.fluxcd.io/v1
           paths:
           - backend:
               serviceName: hello-arc
-              servicePort: 80      
+              servicePort: 80
