@@ -16,4 +16,4 @@ spec:
     replicaCount: 3
     env:
       name: MESSAGE
-      value: Hello Clippy!
+      value: Hello from Production!
