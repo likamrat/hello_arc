@@ -4,7 +4,7 @@ metadata:
   name: hello-arc
   namespace: hello-arc
 spec:
-  releaseName: hello-arc
+  releaseName: hello-arc-prod
   chart:
     git: git@github.com:likamrat/hello_arc
     path: charts/hello-arc
