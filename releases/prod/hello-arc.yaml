@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: hello-arc
-  namespace: hello-arc
+  namespace: prod
 spec:
   releaseName: hello-arc-prod
   chart:
