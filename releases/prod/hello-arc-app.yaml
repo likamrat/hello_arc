@@ -17,4 +17,4 @@ apiVersion: helm.fluxcd.io/v1
      replicaCount: 3
      env:
       name: MESSAGE
-      value: Helm Arc testing!
+      value: Helm Arc GitOps testing!
