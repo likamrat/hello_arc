@@ -1,0 +1,20 @@
+apiVersion: helm.fluxcd.io/v1
+ kind: HelmRelease
+ metadata:
+   name: hello-arc-app
+   namespace: prod
+   annotations:
+ spec:
+   releaseName: hello-arc-app
+   chart:
+     git: https://github.com/likamrat/hello_arc
+     path: charts/hello-arc
+     ref: master
+   values:
+     image:
+       repository: liorkamrat/hello-arc:latest
+       tag: v1
+     replicaCount: 3
+     env:
+      name: MESSAGE
+      value: Helm Arc testing!
