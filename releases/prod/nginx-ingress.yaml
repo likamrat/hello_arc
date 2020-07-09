@@ -1,0 +1,16 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: nginx-ingress
+  namespace: cluster-mgmt
+spec:
+  releaseName: nginx-ingress
+  chart:
+    git: https://github.com/likamrat/hello_arc.git
+    path: charts/nginx-ingress
+    ref: master
+  values:
+    image:
+      repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
+      tag: "0.32.0"
+    replicaCount: 3
