@@ -4,7 +4,7 @@ metadata:
   name: nginx-ingress
   namespace: cluster-mgmt
 spec:
-  releaseName: nginx-ingress
+  releaseName: nginx-ingress-prod
   chart:
     git: https://github.com/likamrat/hello_arc.git
     path: charts/nginx-ingress
