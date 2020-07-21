@@ -13,7 +13,7 @@ spec:
     image:
       repository: liorkamrat/hello-arc
       tag: latest
-    replicaCount: 2
+    replicaCount: 1
     env:
       name: MESSAGE
       value: Hello from Arc Demo!
