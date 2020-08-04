@@ -16,4 +16,4 @@ spec:
     replicaCount: 3
     env:
       name: MESSAGE
-      value: Hello Arc GitOps Demo Meetup!
+      value: Hello Arc GitOps Demo!
