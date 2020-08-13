@@ -13,7 +13,7 @@ spec:
     image:
       repository: liorkamrat/hello-arc
       tag: latest
-    replicaCount: 3
+    replicaCount: 1
     env:
       name: MESSAGE
-      value: Hello Arc GitOps Demo for Ignite!
+      value: Hello Arc GitOps Demo!
