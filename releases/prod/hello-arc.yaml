@@ -16,4 +16,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Hello from Arc Demo!
+      value: Hello Arc GitOps Demo!
