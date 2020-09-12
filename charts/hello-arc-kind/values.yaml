@@ -42,7 +42,7 @@ securityContext: {}
 
 service:
   type: NodePort
-  port: 80
+  port: 8080
   targetPort: 8080
 
 ingress:
@@ -60,7 +60,7 @@ ingress:
       paths:
       - backend:
           serviceName: hello-arc
-          servicePort: 80
+          servicePort: 8080
 
   # tls: []
   #  - secretName: chart-example-tls
