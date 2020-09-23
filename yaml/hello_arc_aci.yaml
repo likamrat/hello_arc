@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: helloworld
+  name: hello-arc-aci
 spec:
   containers:
   - image: liorkamrat/hello-arc:latest
     imagePullPolicy: Always
-    name: helloworld
+    name: hello-arc-aci
     resources:
       requests:
         memory: 1G
