@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: hello-arc-aci
+  namespace: hello-arc-aci
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-arc-aci
+  template:
+    metadata:
+      labels:
+        app: hello-arc-aci
+    spec:
+      containers:
+      - image: liorkamrat/hello-arc:latest
+        imagePullPolicy: Always
+        name: hello-arc-aci
+        resources:
+          requests:
+            memory: 1G
+            cpu: 1
+        ports:
+        - containerPort: 80
+          name: http
+          protocol: TCP
+        - containerPort: 443
+          name: https
+        env:
+        - name: MESSAGE
+          value: This is an Azure Arc GitOps Demo!
+      dnsPolicy: ClusterFirst
+      nodeSelector:
+        kubernetes.io/role: agent
+        beta.kubernetes.io/os: linux
+        type: virtual-kubelet
+      tolerations:
+      - key: virtual-kubelet.io/provider
+        operator: Exists
+      - key: azure.com/aci
+        effect: NoSchedule
