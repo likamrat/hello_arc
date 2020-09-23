@@ -1,0 +1,16 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: hello-arc-aci
+  namespace: hello-arc-aci
+spec:
+  releaseName: hello-arc-aci
+  chart:
+    git: https://github.com/likamrat/hello_arc.git
+    path: charts/hello-arc-aci
+    ref: master
+  values:
+    image:
+      repository: liorkamrat/hello-arc
+      tag: latest
+    replicaCount: 1
