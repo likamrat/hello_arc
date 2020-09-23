@@ -29,7 +29,7 @@ spec:
           name: https
         env:
         - name: MESSAGE
-          value: This is an Azure Arc GitOps Demo!
+          value: This is an Azure Arc GitOps Demo on ACI!
       dnsPolicy: ClusterFirst
       nodeSelector:
         kubernetes.io/role: agent
