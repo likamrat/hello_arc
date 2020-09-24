@@ -11,6 +11,6 @@ spec:
     ref: master
   values:
     image:
-      repository: liorkamrat/hello-arc
+      repository: mcr.microsoft.com/azuredocs/aci-helloworld
       tag: latest
     replicaCount: 1
