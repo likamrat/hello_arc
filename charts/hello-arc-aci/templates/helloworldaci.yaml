@@ -18,7 +18,6 @@ spec:
     - containerPort: 443
       name: https
   dnsPolicy: ClusterFirst
-  replicas: {{ .Values.replicaCount }}
   nodeSelector:
     kubernetes.io/role: agent
     beta.kubernetes.io/os: linux
