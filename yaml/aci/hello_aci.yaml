@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Pod
 metadata:
   name: helloworld
 spec:
@@ -17,7 +17,6 @@ spec:
       protocol: TCP
     - containerPort: 443
       name: https
-  replicas: {{ .Values.replicaCount }}      
   dnsPolicy: ClusterFirst
   nodeSelector:
     kubernetes.io/role: agent
