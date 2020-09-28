@@ -16,4 +16,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Hello Azure Arc K8s GitOps Demo for BTS!
+      value: Hello Azure Arc K8s GitOps Demo!
