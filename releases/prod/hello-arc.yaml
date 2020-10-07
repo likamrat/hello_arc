@@ -16,4 +16,4 @@ spec:
     replicaCount: 3
     env:
       name: MESSAGE
-      value: BTS is also "Born to Sing" :-)
+      value: Azure Arc enabled Kubernetes GitOps Demo!
