@@ -16,4 +16,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Give me free lunch!
+      value: Azure Arc enabled Kubernetes GitOps Demo!
