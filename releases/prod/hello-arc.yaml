@@ -16,4 +16,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Azure Arc enabled Kubernetes Demo!
+      value: Azure Arc enabled Kubernetes Git Ops Demo!
