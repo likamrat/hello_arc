@@ -16,4 +16,4 @@ spec:
     replicaCount: 1
     env:
       name: MESSAGE
-      value: Happy Azure Friday everyone!
+      value: Azure Arc enabled K8s GitOps Demo!
