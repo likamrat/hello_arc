@@ -6,11 +6,8 @@ metadata:
 spec:
   releaseName: nginx-ingress
   chart:
-    git: https://github.com/likamrat/hello_arc.git
-    path: charts/nginx-ingress
+    git: https://github.com/kubernetes/ingress-nginx.git
+    path: charts/ingress-nginx
     ref: master
   values:
-    image:
-      repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
-      tag: "0.32.0"
     replicaCount: 3
